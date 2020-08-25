@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin:0px;
+    
+}
+
+.nav{
+    background-image: linear-gradient(to right,rgba(124, 134, 133, 0.65), #fdf2de8e);
+}
+
+.logo img{
+    width: 250px;
+    height: 27px;
+    margin-top: 4px;
+    padding: 2px;
+    padding-left: 20px;
+    
+    
+}
+
+.bar{
+    width: 30px;
+    margin:4px;
+    height: 3px;
+    color:pink;
+    background: rgb(78, 78, 78);  /*iconita*/
+}
+
+.btn{
+    border: 2px solid rgb(78, 78, 78);
+    display: inline-block;
+    cursor:pointer;
+    
+}
+
+.logoBtn{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-right: 5px;
+}
+
+ul{
+    list-style: none;
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.showNav{
+    height: 160px;  /*se augmenta si augmentan los numeros de paginas*/
+}
+
+ul li a{
+    background: #1b2f2b73; /*color quan esta reduit*/
+    
+    display: block;
+    color: #fff;
+    padding: 10px;
+    
+    text-decoration: none;
+    transition: all 1s ease;
+    font-size: 18px;
+   
+   
+
+}
+
+ul li a:hover{
+    background: #0f0e0ece;
+    color: rgb(168, 106, 78);
+    padding-left: 20px;
+    
+}
+
+/* responsive mode */
+
+@media screen and (min-width:640px){
+    nav{
+        background: #424242;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        height: auto;
+    }
+
+    .showNav{
+        height: auto;
+    }
+
+    nav ul a{
+        background: transparent;
+    }
+
+    .logoBtn{
+        border:none;
+    }
+
+    ul li a:hover{
+        background: none;
+        color: rgb(143, 47, 3);
+        padding-left: 10px;
+    }
+}
